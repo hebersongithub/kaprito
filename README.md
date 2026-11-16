@@ -1,25 +1,28 @@
-# Kaprito Online — Ligar e Limpar
+# Kaprito Online — Digitar, ligar e limpar
 
-Aplicativo web para organizar cópias de contatos em **VCF**. Todo o processamento acontece **localmente no navegador**; nenhuma agenda é enviada ao GitHub.
+Aplicativo web para digitar um número de telefone e abrir o discador do celular, sem importar agenda.
 
-## Abrir no navegador
+**Site:** https://hebersongithub.github.io/kaprito/
 
-Site GitHub Pages **após habilitar a publicação**: https://hebersongithub.github.io/kaprito/
+## Modo rápido (sem CSV ou VCF)
 
-Caso o link ainda não esteja disponível, vá em [Settings → Pages](https://github.com/hebersongithub/kaprito/settings/pages), escolha **Source: GitHub Actions** e salve. Confira o resultado em [Actions](https://github.com/hebersongithub/kaprito/actions).
+1. Digite o número, de preferência com DDD, no campo **Número de telefone**.
+2. Toque em **Ligar**. O site solicita ao navegador que abra o discador (`tel:`).
+3. Realize a ligação no aplicativo Telefone.
+4. Volte ao Kaprito e toque em **Liguei: limpar da tela**.
+5. Confirme para retirar o número digitado da tela. Você pode repetir com outro.
 
-## Funções
+> O navegador não informa de forma confiável se a ligação realmente aconteceu ou terminou. Por segurança, a confirmação é manual. O site **não exclui contatos reais do Android ou histórico de chamadas**.
 
-- **Testar exemplo** sem carregar contatos pessoais.
-- **Importar VCF** exportado do app Contatos Android.
-- Pesquisar por nome ou 6+ dígitos.
-- Identificar números duplicados.
-- **Ligar**: solicita abertura do discador via `tel:`; não funciona em todos os ambientes incorporados.
-- **Liguei: limpar número**: exige confirmação e remove apenas aquele telefone da **cópia importada**.
-- Desfazer limpeza; baixar backup original; exportar VCF limpo.
+## Modo opcional: contatos por arquivo VCF
 
-## Limitações
+Para trabalhar com vários contatos, use **Importar VCF**. A lista é processada localmente no próprio navegador; o site não recebe uma cópia dos contatos. Permite encontrar duplicados, ligar, retirar telefones selecionados da cópia e exportar VCF limpo.
 
-O navegador não pode comprovar o fim da ligação, editar contatos reais do Android, nem apagar chamadas ou SMS. A importação de um VCF limpo **não substitui nem apaga** automaticamente contatos já existentes no aparelho.
+O formato **CSV não é exigido** para ligar no modo rápido, e a importação de CSV ainda não é compatível. Importar VCF limpo no Android não substitui nem apaga automaticamente os contatos antigos.
 
-**Atenção:** este repositório é público e contém apenas o aplicativo. Não envie sua agenda VCF para o GitHub; importe-a somente no navegador.
+## Privacidade e acesso
+
+- Não publique arquivos da sua agenda no repositório GitHub. Importe-os somente pelo navegador.
+- O site é público; o código-fonte não contém números particulares.
+- O botão Ligar pode ser bloqueado por ambientes incorporados, inclusive dentro do ChatGPT. Abra o endereço do site no Chrome ou navegador padrão do celular.
+- No computador, é necessário que exista um programa compatível com links de telefone.
