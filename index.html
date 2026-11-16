@@ -55,8 +55,8 @@ let directWaiting = false;
 let directDialedNumber = '';
 function directNumberOrNull(input) {
   const v = input.trim();
-  if (!/^[+0-9() .\\-]+$/.test(v) || (v.match(/\\+/g) || []).length > 1 || (v.includes('+') && !v.startsWith('+'))) return null;
-  const digits = v.replace(/\\D/g, '');
+  if (!/^[+0-9() .-]+$/.test(v) || (v.match(/\+/g) || []).length > 1 || (v.includes('+') && !v.startsWith('+'))) return null;
+  const digits = v.replace(/\D/g, '');
   if (digits.length < 8 || digits.length > 15) return null;
   return (v.startsWith('+') ? '+' : '') + digits;
 }
@@ -79,7 +79,7 @@ $('directForm').addEventListener('submit', e => {
 });
 $('directConfirm').addEventListener('click', () => {
   if (!directWaiting) return;
-  if (!confirm('Você realizou a ligação para ' + directDialedNumber + '?\\n\\nDeseja limpar esse número da tela? Isso NÃO apaga contatos do celular.')) return;
+  if (!confirm('Você realizou a ligação para ' + directDialedNumber + '?\n\nDeseja limpar esse número da tela? Isso NÃO apaga contatos do celular.')) return;
   $('directNumber').value = '';
   $('directPending').hidden = true;
   directWaiting = false;
