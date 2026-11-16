@@ -4,16 +4,40 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light">
-<title>Kaprito Online — Ligar e limpar contatos</title>
+<title>Kaprito Online — Digitar, ligar e limpar</title>
 <style>
 :root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:#172c38;background:#f4f8fa;font-synthesis:none}*{box-sizing:border-box}body{margin:0}.wrap{max-width:1020px;margin:auto;padding:26px 20px 50px}.top{display:flex;align-items:center;gap:14px;margin-bottom:22px}.logo{display:grid;place-items:center;background:#073f43;color:white;width:50px;height:50px;border-radius:16px;font-size:27px;box-shadow:0 5px 12px #073f4333}.top h1{margin:0;font-size:27px;letter-spacing:-.8px}.top p{margin:3px 0 0;color:#647982;font-size:14px}.hero{display:flex;justify-content:space-between;align-items:center;gap:22px;padding:23px 25px;background:linear-gradient(125deg,#0c504d,#14706c);color:white;border-radius:20px;margin-bottom:18px}.hero h2{font-size:21px;margin:0 0 6px}.hero p{margin:0;max-width:620px;color:#d7f4f0;line-height:1.5;font-size:14px}.hero .hero-actions{display:flex;gap:9px;flex-wrap:wrap;flex-shrink:0}.btn{border:1px solid #ccdadd;border-radius:11px;background:white;color:#17474a;font-weight:650;font-size:13px;padding:11px 15px;cursor:pointer;transition:.15s;white-space:nowrap}.btn:hover{filter:brightness(.96)}.btn:disabled{opacity:.45;cursor:not-allowed}.btn.primary{background:#057d72;border-color:#057d72;color:white}.btn.white{background:white;color:#084b46;border-color:white}.btn.ghost{background:#ffffff18;color:white;border-color:#ffffff5c}.btn.danger{background:#b32939;color:white;border-color:#b32939}.btn.sm{padding:9px 11px;font-size:12px}.sheet{background:white;border:1px solid #e0e9ed;border-radius:18px;padding:20px;margin:18px 0;box-shadow:0 3px 16px #1a384008}.sheet-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}.sheet h3{font-size:16px;margin:0}.muted{color:#70818a;font-size:13px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.stat{padding:17px;border:1px solid #dbe7e9;border-radius:14px;background:#fbfdfd}.stat strong{display:block;font-size:27px;font-variant-numeric:tabular-nums;color:#0a524f}.stat span{font-size:12px;color:#637781}.tools{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:18px}.search{display:flex;align-items:center;gap:8px;border:1px solid #cfdde2;background:white;border-radius:12px;padding:0 13px;min-width:250px;flex:1}.search input{border:0;outline:none;width:100%;padding:13px 2px;font-size:14px;color:#143239}.tabs{display:flex;gap:5px;background:#ecf3f5;padding:4px;border-radius:12px}.tab{background:transparent;border:0;border-radius:9px;font-weight:650;font-size:13px;color:#587078;padding:10px 13px;cursor:pointer}.tab[aria-selected=true]{background:white;color:#0a554f;box-shadow:0 1px 4px #15363d1d}.hint{font-size:12px;color:#617880;margin-top:8px}.listbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:12px 0;border-bottom:1px solid #e6edef}.listbar label{font-size:13px;color:#344e57;display:flex;gap:7px;align-items:center}.listbar .controls{display:flex;gap:8px;flex-wrap:wrap}.contacts{max-height:490px;overflow:auto}.person{display:flex;align-items:center;gap:14px;padding:15px 7px;border-bottom:1px solid #edf1f3}.person:last-child{border:0}.person input[type=checkbox]{width:17px;height:17px;accent-color:#0a8577;cursor:pointer}.avatar{width:40px;height:40px;flex-shrink:0;border-radius:13px;background:#e5f3ef;display:grid;place-items:center;color:#167469;font-weight:750}.details{flex:1;min-width:0}.name{font-weight:670;font-size:14px;overflow-wrap:anywhere}.numbers{font-size:13px;color:#576e79;margin-top:3px;overflow-wrap:anywhere}.tag{display:inline-block;margin-left:7px;background:#fff1dc;color:#93611b;font-size:10px;border-radius:6px;padding:3px 6px;font-weight:700;vertical-align:middle}.empty{padding:48px 10px;text-align:center;color:#70818a;font-size:14px}.foot{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding-top:16px}.notice{padding:14px 16px;border-radius:13px;background:#eaf5f3;color:#255f59;font-size:13px;line-height:1.55}.warning{background:#fff5e9;color:#8c5b20}.file-input{display:none}#callPanel[hidden]{display:none!important}.callbar{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:12px;border:1px solid #b8d9d5;background:#eef9f7;border-radius:12px;margin:14px 0}.callbar strong{font-size:14px}.callbar p{margin:4px 0 0;font-size:12px;color:#4c6f6c}.callbtn{background:#e8f5f0;border:1px solid #a3c7bb;color:#14594d;border-radius:7px;padding:5px 9px;margin:4px 5px 4px 0;text-decoration:none;font-weight:650;font-size:12px;display:inline-block}.callbtn:hover{background:#d0ece0}.status{min-height:20px;font-size:13px;color:#385d61;margin-top:10px}.footer{color:#73878d;font-size:12px;text-align:center;margin-top:22px;line-height:1.7}button:focus-visible,input:focus-visible{outline:3px solid #74c5b7;outline-offset:2px}@media(max-width:700px){.wrap{padding:16px 12px 25px}.hero{flex-direction:column;align-items:stretch;padding:20px}.hero .hero-actions{flex-wrap:wrap}.hero .hero-actions>*{flex:1}.stats{gap:7px}.stat{padding:12px}.stat strong{font-size:22px}.stat span{font-size:11px}.tools{align-items:stretch}.tabs{width:100%;justify-content:space-between}.tab{padding:10px}.sheet{padding:15px}.person{gap:9px}}
+.direct-sheet{border:2px solid #90d1c5;background:#fbfffe}.direct-description{line-height:1.55;margin:0 0 16px}.direct-label{display:block;font-size:13px;font-weight:700;color:#305657;margin-bottom:8px}.direct-row{display:flex;gap:9px;align-items:stretch}.direct-row input{flex:1;min-width:0;border:1px solid #b4d2cd;background:#fff;border-radius:10px;font-size:19px;letter-spacing:.5px;padding:12px;color:#153d3a}.direct-row input:focus{outline:3px solid #74c5b7;outline-offset:2px}.direct-pending{background:#eaf7f4;border:1px solid #afd8d0;border-radius:12px;padding:14px;margin-top:15px;color:#184c46}.direct-pending[hidden]{display:none!important}.direct-pending strong{font-size:14px}.direct-pending p{font-size:13px;margin:7px 0 11px;line-height:1.5}.direct-actions{display:flex;gap:8px;flex-wrap:wrap}@media(max-width:580px){.direct-row{flex-wrap:wrap}.direct-row input{flex-basis:100%;width:100%}.direct-row .btn{flex:1}}
 </style>
 </head>
 <body>
 <main class="wrap">
-  <header class="top"><div class="logo" aria-hidden="true">✦</div><div><h1>Kaprito <span style="font-size:14px;color:#338476;letter-spacing:0">LIGAR + LIMPAR</span></h1><p>Ligue pelo discador e limpe números já utilizados</p></div></header>
-  <section class="hero"><div><h2>Seus contatos, sob seu controle.</h2><p>Carregue uma cópia <strong>.vcf</strong> da agenda. Pesquise, ligue usando o discador do celular, marque o número utilizado e gere um arquivo limpo. Tudo acontece somente no seu navegador.</p></div><div class="hero-actions"><label for="contactFile" class="btn white" style="display:inline-block;text-align:center;cursor:pointer">Importar VCF</label><input class="file-input" type="file" id="contactFile" accept=".vcf,.vcard,text/vcard,text/x-vcard"><button class="btn ghost" id="demoBtn">Testar exemplo</button></div></section>
-  <div class="notice warning"><strong>O que esta versão faz:</strong> abre o aplicativo padrão de chamadas usando um número da cópia VCF. Quando você voltar, confirma se ligou e então retira somente esse número da cópia. <strong>Não detecta o fim da ligação nem apaga a agenda real</strong>, chamadas ou SMS. Preserve um backup antes de importar uma agenda modificada.</div>
+  <header class="top"><div class="logo" aria-hidden="true">✦</div><div><h1>Kaprito <span style="font-size:14px;color:#338476;letter-spacing:0">LIGAR + LIMPAR</span></h1><p>Digite o número e ligue, sem precisar importar contatos</p></div></header>
+  <section class="sheet direct-sheet" aria-labelledby="directTitle">
+    <div class="sheet-head"><h3 id="directTitle">Digite um telefone e ligue</h3><span class="muted">Sem CSV, sem VCF</span></div>
+    <p class="muted direct-description">Basta informar o número com DDD. O Kaprito tentará abrir o aplicativo Telefone do seu aparelho. Ao voltar, confirme a limpeza do número da tela.</p>
+    <form id="directForm" novalidate>
+      <label class="direct-label" for="directNumber">Número de telefone</label>
+      <div class="direct-row">
+        <input id="directNumber" type="tel" inputmode="tel" maxlength="32" autocomplete="off" placeholder="(62) 99999-9999" aria-describedby="directHelp">
+        <button type="submit" class="btn primary" id="directCall">☎ Ligar</button>
+        <button type="button" class="btn" id="directCopy">Copiar</button>
+      </div>
+    </form>
+    <p id="directHelp" class="hint">Use 8 a 15 dígitos, com ou sem DDD/código do país. No computador, a ligação depende de um discador instalado.</p>
+    <div id="directPending" class="direct-pending" hidden>
+      <strong>Depois de ligar para <span id="directPendingNumber"></span>:</strong>
+      <p>Confirme apenas se fez a chamada. O Kaprito não consegue detectar automaticamente seu encerramento.</p>
+      <div class="direct-actions">
+        <button type="button" id="directConfirm" class="btn primary sm">Liguei: limpar da tela</button>
+        <button type="button" id="directCancel" class="btn sm">Cancelar</button>
+      </div>
+    </div>
+    <p id="directStatus" class="status" role="status">Pronto para ligar. Nenhum contato do celular será apagado.</p>
+    <p class="hint"><strong>Importante:</strong> a limpeza direta apaga apenas o número digitado desta tela, não da agenda ou do histórico de chamadas do Android.</p>
+  </section>
+  <section class="hero"><div><h2>Opcional: limpar uma lista de contatos</h2><p>Para trabalhar com vários contatos da agenda, importe um arquivo <strong>.vcf</strong>. Não é necessário para usar o modo direto acima. O processamento do arquivo acontece no seu navegador.</p></div><div class="hero-actions"><label for="contactFile" class="btn white" style="display:inline-block;text-align:center;cursor:pointer">Importar VCF</label><input class="file-input" type="file" id="contactFile" accept=".vcf,.vcard,text/vcard,text/x-vcard"><button class="btn ghost" id="demoBtn">Testar exemplo</button></div></section>
+  <div class="notice warning"><strong>Como funciona:</strong> digite o telefone e abra o discador. Quando voltar, confirme para limpar o campo. Se importar um VCF, também poderá retirar números da cópia do arquivo. <strong>O navegador não detecta o fim da chamada nem exclui contatos reais</strong>, chamadas ou SMS.</div>
   <section class="sheet"><div class="sheet-head"><h3>Visão geral</h3><span class="muted" id="fileName">Nenhum arquivo carregado</span></div><div class="stats"><div class="stat"><strong id="countAll">0</strong><span>Contatos atuais</span></div><div class="stat"><strong id="countDuplicates">0</strong><span>Contatos com número duplicado</span></div><div class="stat"><strong id="countNoPhone">0</strong><span>Sem telefone</span></div></div>
     <div class="tools"><div class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Buscar por nome ou número (mín. 6 dígitos)" aria-label="Pesquisar contatos"></div><div class="tabs" role="tablist" aria-label="Filtro"><button class="tab" data-filter="all" aria-selected="true">Todos</button><button class="tab" data-filter="duplicates" aria-selected="false">Duplicados</button><button class="tab" data-filter="noPhone" aria-selected="false">Sem telefone</button></div></div><p class="hint" id="searchHint">A busca por número exige pelo menos 6 dígitos, como no Kaprito original.</p>
   </section>
@@ -25,6 +49,67 @@
 (() => {
 'use strict';
 const $ = id => document.getElementById(id);
+
+/* Modo rápido: não requer importação nem modifica contatos reais. */
+let directWaiting = false;
+let directDialedNumber = '';
+function directNumberOrNull(input) {
+  const v = input.trim();
+  if (!/^[+0-9() .\\-]+$/.test(v) || (v.match(/\\+/g) || []).length > 1 || (v.includes('+') && !v.startsWith('+'))) return null;
+  const digits = v.replace(/\\D/g, '');
+  if (digits.length < 8 || digits.length > 15) return null;
+  return (v.startsWith('+') ? '+' : '') + digits;
+}
+function directFeedback(message) { $('directStatus').textContent = message; }
+$('directForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const number = directNumberOrNull($('directNumber').value);
+  if (!number) {
+    directFeedback('Informe um telefone válido com 8 a 15 dígitos. Exemplo: (62) 99999-9999.');
+    $('directNumber').focus();
+    return;
+  }
+  directWaiting = true;
+  directDialedNumber = number;
+  $('directPendingNumber').textContent = number;
+  $('directPending').hidden = false;
+  directFeedback('Tentando abrir o discador. Se não abrir dentro do ChatGPT, use o site no navegador do celular.');
+  try { window.location.href = 'tel:' + number; }
+  catch (err) { directFeedback('O ambiente bloqueou o discador. Abra o Kaprito no navegador do celular ou copie o telefone.'); }
+});
+$('directConfirm').addEventListener('click', () => {
+  if (!directWaiting) return;
+  if (!confirm('Você realizou a ligação para ' + directDialedNumber + '?\\n\\nDeseja limpar esse número da tela? Isso NÃO apaga contatos do celular.')) return;
+  $('directNumber').value = '';
+  $('directPending').hidden = true;
+  directWaiting = false;
+  directDialedNumber = '';
+  directFeedback('Número limpo da tela. A agenda do celular não foi alterada. Pronto para o próximo.');
+  $('directNumber').focus();
+});
+$('directCancel').addEventListener('click', () => {
+  directWaiting = false; directDialedNumber = '';
+  $('directPending').hidden = true;
+  directFeedback('Operação cancelada. O número permanece no campo para você tentar novamente.');
+});
+$('directNumber').addEventListener('input', () => {
+  if (directWaiting && directNumberOrNull($('directNumber').value) !== directDialedNumber) {
+    directWaiting = false; directDialedNumber = ''; $('directPending').hidden = true;
+    directFeedback('Número atualizado. Clique em Ligar para iniciar a nova chamada.');
+  }
+});
+$('directCopy').addEventListener('click', async () => {
+  const number = directNumberOrNull($('directNumber').value);
+  if (!number) { directFeedback('Digite um telefone válido antes de copiar.'); return; }
+  try {
+    if (!navigator.clipboard || !navigator.clipboard.writeText) throw new Error('Cópia automática indisponível');
+    await navigator.clipboard.writeText(number);
+    directFeedback('Número copiado: ' + number);
+  } catch(err) {
+    $('directNumber').focus(); $('directNumber').select();
+    directFeedback('Selecione e copie o número manualmente (Ctrl+C), pois este navegador bloqueou a cópia automática.');
+  }
+});
 let original = '', cards = [], deletedHistory = [], filter = 'all', selection = new Set(), label = '', pendingCall = null;
 const demo = `BEGIN:VCARD\nVERSION:3.0\nFN:Ana Souza\nTEL;TYPE=CELL:+55 (62) 99912-3456\nEND:VCARD\nBEGIN:VCARD\nVERSION:3.0\nFN:Bruno Costa\nTEL;TYPE=CELL:(62) 98822-1111\nEND:VCARD\nBEGIN:VCARD\nVERSION:3.0\nFN:Ana Souza - trabalho\nTEL;TYPE=WORK:62 99912-3456\nEMAIL:ana@example.com\nEND:VCARD\nBEGIN:VCARD\nVERSION:3.0\nFN:Carlos Lima\nTEL;TYPE=CELL:(62) 97771-8888\nEND:VCARD\nBEGIN:VCARD\nVERSION:3.0\nFN:Contato sem telefone\nEMAIL:semtelefone@example.com\nEND:VCARD\n`;
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
